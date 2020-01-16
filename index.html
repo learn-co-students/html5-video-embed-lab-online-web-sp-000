@@ -11,6 +11,21 @@
     <h2>Realty Group</h2>
 
     <!-- your code here! See README.md for deliverables -->
+  <!--controls attribute present. This is required to display the controls to start and pause playback, adjust the recording's
+   volume, etc. There are optional attributes you can provide such as autoplay and loop.
+  These start the audio/video on page load, rather than waiting for a user to click play and repeat the audio after it ends.
+  The width and height attributes set the size of the video. Without them, the video element may flicker while the page
+  is loading.The source tag is only ever used for multiple media resources, as we have in our example.
+  The src attribute of source is always required, as it is the path to the file we want to play.
+  The type tag is helpful in defining what format the media is in. 
+  When wi don't have multiple sources:
+  <video src="videofile.ogg" autoplay poster="posterimage.jpg"></video> -->
+
+      <video controls autoplay width="600px" height="400px" >
+        <source src="https://curriculum-content.s3.amazonaws.com/skills-front-end-web-development/real-estate-lab-assets/real-estate.mp4" type="video/mp4">
+        <source src=" https://curriculum-content.s3.amazonaws.com/skills-front-end-web-development/real-estate-lab-assets/real-estate.ogg" type="video/ogg">
+      </video>
 
   </body>
 </html>
+
