@@ -38,7 +38,7 @@ RSpec.describe 'index.html' do
     it 'contains two nested source tags' do
       video = parsed_html.search('video')[0]
       expect(video.children[0].name).to_not be_nil, "No source tag was found nested within the video tag"
-      expect(video.children[0].attributes["src"]).to_not be_nil, "No src attribute found on the first source tag"
+      expect(video.children[0].attributes["src"]).to_not be_nil, "No src attribute found on the first source tag" #he meant no src in video tag. src in source tag is fine
       expect(video.children[0].attributes["type"].value).to be == "video/mp4", "The first source tag should have type set to 'video/mp4'"
       expect(video.children[0].children[0].name).to_not be_nil, "No second source tag was found nested within the video tag"
       expect(video.children[0].children[0].attributes["src"]).to_not be_nil, "No src attribute found on the second source tag"
